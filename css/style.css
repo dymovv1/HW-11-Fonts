@@ -128,25 +128,14 @@ a {
     min-height: 100vh;
 }
 
-
-/* .aside {
-    display: inline-flex;
-    flex-direction: column;
-    max-width: 385px;
-    padding-top: 10px;
-    padding-left: 10px;
-    order: 1;
-    margin-right: 36px;
-    position: sticky;
-    top: 0;
-} */
-/* 
 .aside-wrapper {
     position: sticky;
     top: 0;
-  } */
+  } 
 
 .aside {
+    position: sticky;
+    top: 0;
     display: inline-flex;
     flex-direction: column;
     max-width: 385px;
