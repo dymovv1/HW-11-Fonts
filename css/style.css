@@ -21,12 +21,16 @@
     margin-bottom: 20px;
 }
 
+.mb_9 {
+    margin-bottom: 9px;
+}
+
 .mb_70 {
     margin-bottom: 70px;
 }
 
 .mb_40 {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .pt_70 {
@@ -35,8 +39,33 @@
 
 .container {
     max-width: 1200px;
-    width: 90%;
     margin: 0% auto;
+}
+
+.text {
+    font-family: var(--text-fam);
+    font-size: var(--text-size);
+    color: var(--main-color);
+    line-height: 48px;
+    font-weight: 400;
+}
+
+.title {
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: var(--size-title);
+    font-family: var(--title-fam);
+    line-height: 48px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.underline {
+    border-bottom: var(--border-title);
+}
+
+.max_w {
+    max-width: 365px;
 }
 
 body {
@@ -45,6 +74,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--main-color);
 }
 
 /* ---HEADER--- */
@@ -52,32 +82,33 @@ a {
 #header {
     padding-top: 13px;
     padding-bottom: 13px;
+    height: 80px;
 }
 
 .header-block_text__eng {
     font-family: 'Tourney';
     font-weight: 600;
     font-size: 22px;
-    line-height: 18px;
-    margin-left: 4px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
 }
 
 .header-block_text {
     display: inline-flex;
     justify-content: center;
-    align-items: center;
     gap: 54px;
-    margin-right: 600px;
+    margin-right: 601px;
 }
 
 .header-block_text__doc {
     font-family: 'Staatliches';
     font-weight: 400;
     font-size: 22px;
-    line-height: 28px;
+    line-height: 55px;
     letter-spacing: 0.6px;    
     color: var(--main-color);
-    max-width: 261px;
+    width: 261px;
 
 }
 
@@ -90,6 +121,89 @@ a {
     display: flex;
 }
 
-
-
 /* >---HEADER---< */
+
+.general-flex_block {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* .aside {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 385px;
+    padding-top: 10px;
+    padding-left: 10px;
+    order: 1;
+    margin-right: 36px;
+    position: sticky;
+    top: 0;
+} */
+/* 
+.aside-wrapper {
+    position: sticky;
+    top: 0;
+  } */
+
+.aside {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 385px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 36px;
+    order: 1;
+  }
+
+.section-text {
+    order: 2;
+}
+
+.section-text_center {
+    max-width: 785px;
+}
+
+.aside :nth-child(2),
+.aside :nth-child(4),
+.aside :nth-child(6){
+    margin-bottom: 70px;
+}
+
+.aside :nth-child(5) {
+    width: 370px;
+}
+
+.section-text_block_blackLine {
+    display: block;
+    width: 100px;
+    height: 8px;
+    background: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.chapter {
+    text-transform: capitalize;
+}
+
+.chapter::after {
+    content: "Chapter 1";
+    font-family: var(--chapter-fam);
+    font-size: 17px;
+    color: var(--main-color);
+    font-weight: 300;
+    line-height: 30px;
+    position: relative;
+    top: -23px;
+    left: -4px;
+}
+
+.text_underline {
+    text-decoration: underline 2px var(--main-color);
+}
+/* <---MAIN---> */
+
+
+
+
+
