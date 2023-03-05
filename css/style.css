@@ -161,6 +161,18 @@ a {
     letter-spacing: 0.6px;    
     color: var(--main-color);
     width: 261px;
+    transition: all 0.3s;
+}
+
+.header-block_text__doc:hover {
+    cursor: pointer;
+    color: #BDBDBD;
+
+}
+
+.header-block_text__doc:active {
+    cursor: pointer;
+    color: var(--main-color);
 
 }
 
@@ -278,8 +290,6 @@ a {
 }
   
 /* <---MAIN---> */
-
-
 
 
 

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #000000;
+    --size-title: 36px;
+    --border-title: 1px solid #BDBDBD;
+    --size-ch: 30px;
+    --text-size: 28px;
+    --text-fam: 'PT Sans';
+    --title-fam:'Francois One';
+    --chapter-fam:'Farro';
+    --gray-text: #DADADA;
+    --underline-bk: 1px solid #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0% auto;
+}
+
+
+.main-block {
+    background-color: #8f84a1;
+    height: 100vh;
+   
+}
+
+.block-photo_404 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,a,p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+a {
+    display: inline-flex;
+    padding: 15px 80px;
+    background-color: goldenrod;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+a:hover {
+    box-shadow: 1px 1px 2px 2px var(--main-color);
+    transform: scale(1.1);
+}
+
+a:active {
+    background-color: #8f84a1;
+}
+
+.animated-text {
+    position: relative;
+    left: 100%;
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    to {
+        left: 0%;
+    }
+}
