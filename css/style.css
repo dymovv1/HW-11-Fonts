@@ -83,6 +83,8 @@ a {
     padding-top: 13px;
     padding-bottom: 13px;
     height: 80px;
+    position: sticky;
+    top: 0;
 }
 
 .header-block_text__eng {
@@ -92,6 +94,9 @@ a {
     line-height: 55px;
     letter-spacing: 0.04em;
     color: var(--main-color);
+    top: -2px;
+    left: 3px;
+    position: relative;
 }
 
 .header-block_text {
@@ -123,6 +128,10 @@ a {
 
 /* >---HEADER---< */
 
+/* <---MAIN---> */
+
+
+
 .general-flex_block {
     display: flex;
     min-height: 100vh;
@@ -130,12 +139,10 @@ a {
 
 .aside-wrapper {
     position: sticky;
-    top: 0;
+    top: 100px;
   } 
 
 .aside {
-    position: sticky;
-    top: 0;
     display: inline-flex;
     flex-direction: column;
     max-width: 385px;
@@ -149,9 +156,10 @@ a {
     order: 2;
 }
 
-.section-text_center {
-    max-width: 785px;
-}
+/* .section-text_center {
+
+    width: 100%;
+} */
 
 .aside :nth-child(2),
 .aside :nth-child(4),
@@ -173,9 +181,17 @@ a {
 
 .chapter {
     text-transform: capitalize;
+    font-family: var(--chapter-fam);
+    font-size: 17px;
+    color: var(--main-color);
+    font-weight: 300;
+    line-height: 30px;
+    position: relative;
+    top: -24px;
+    left: -4px;
 }
 
-.chapter::after {
+/* .chapter::after {
     content: "Chapter 1";
     font-family: var(--chapter-fam);
     font-size: 17px;
@@ -183,12 +199,21 @@ a {
     font-weight: 300;
     line-height: 30px;
     position: relative;
-    top: -23px;
+    top: -24px;
     left: -4px;
-}
+} */
 
 .text_underline {
     text-decoration: underline 2px var(--main-color);
+}
+
+.bg_tool {
+    background-image: url(../img/bg_tool.png);
+    background-repeat: no-repeat;
+    background-position: right 40px top 150px;
+    background-attachment: fixed;
+    width: 100%;
+    height: 760px;
 }
 /* <---MAIN---> */
 
