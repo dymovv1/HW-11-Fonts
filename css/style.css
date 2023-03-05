@@ -85,7 +85,20 @@
     line-height: 48px;
     font-weight: 400;
     letter-spacing: 1.5px;
+    cursor: default;
+
 }
+
+span::selection,
+strong::selection,
+h1::selection,
+h2::selection,
+.text::selection {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
 
 .underline {
     border-bottom: var(--border-title);
@@ -112,6 +125,13 @@ a {
     height: 80px;
     position: sticky;
     top: 0;
+    opacity: 1;
+}
+
+.logo:active,
+.logo:hover {
+    opacity: 0.2;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .header-block_text__eng {
@@ -156,6 +176,25 @@ a {
 /* >---HEADER---< */
 
 /* <---MAIN---> */
+
+.title_aside {
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: var(--size-title);
+    font-family: var(--title-fam);
+    line-height: 48px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    transition: all 0.3s;
+}
+
+.title_aside:hover {
+    transform: scale(1.1);
+}
+
+.title_aside:active {
+    transform: scale(1);
+}
 
 .general-flex_block {
     display: flex;
