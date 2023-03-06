@@ -269,7 +269,7 @@ a {
 .bg_tool {
     background-image: url(../img/bg_tool.png);
     background-repeat: no-repeat;
-    background-position: right 40px top 150px;
+    background-position: right 0px top 150px;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
